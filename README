@@ -1,0 +1,13 @@
+Compiling the program
+The program was develloped using FORTRAN. The compiler used was Intel Composer XE 12.1.7, under Visual Studio 2010. Project solutions and configuration are supplied.
+The Inter Math Kernel Libraries are needed. 
+
+Using the program 
+The input file for the program is:
+equivalent_plate_input.txt 
+
+The project.txt should include the folder path where the main input file is (equivalent_plate_input.txt). 
+
+For each wing section an airfoil coordinate file is needed. The naming convention is: airfoil_coordinates_XX.txt, where xx is 01,02,03 and so on.
+If you have one planform, two airfoil_coordinates are needed. If you have two planform, three airfoil_coordinates are needed. 
+                                                                    
