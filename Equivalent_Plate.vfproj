@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{07F07530-74E3-4AF7-9B03-30A83C7B8E1F}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32" DeleteExtensionsOnClean="*.obj;*.mod;*.pdb;*.asm;*.map;*.dyn;*.dpi;*.tmp;*.log;*.ilk;*.exe;$(TargetPath)">
+				<Tool Name="VFFortranCompilerTool" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnDeclarations="true" WarnUnusedVariables="true" WarnUncalled="true" ModulePath="$(INTDIR)/" ObjectFile="$(INTDIR)/" Traceback="true" BoundsCheck="true" UninitializedVariablesCheck="true" RuntimeLibrary="rtMultiThreadedDebug" UseMkl="mklParallel"/>
+				<Tool Name="VFLinkerTool" OutputFile="$(OUTDIR)/Equivalent_Plate_DLL.exe" LinkIncremental="linkIncrementalNo" GenerateDebugInformation="true" ProgramDatabaseFile="$(OUTDIR)/DLL_Shared_Data.pdb" SubSystem="subSystemConsole" HeapReserveSize="100000000" HeapCommitSize="100000000" StackReserveSize="100000000" StackCommitSize="100000000" AdditionalDependencies="mkl_lapack95.lib mkl_scalapack_core.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" HeaderFileName="$(InputName).h" TypeLibraryName="$(IntDir)/$(InputName).tlb"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32" DeleteExtensionsOnClean="*.obj;*.mod;*.pdb;*.asm;*.map;*.dyn;*.dpi;*.tmp;*.log;*.ilk;*.exe;$(TargetPath)">
+				<Tool Name="VFFortranCompilerTool" Parallelization="true" PrefetchInsertionOpt="prefetchMedium" BufferedIO="true" InterproceduralOptimizations="ipoSingleFile" MatrixLibrary="mlYes" Preprocess="preprocessYes" PreprocessorDefinitions="USE_IMSL" EnableEnhancedInstructionSet="codeArchIA32" OpenMP="OpenMPParallelCode" OpenMPDiagLevel="openMPDiagLevel1" ModulePath="$(INTDIR)/" ObjectFile="$(INTDIR)/" UseMkl="mklParallel"/>
+				<Tool Name="VFLinkerTool" OutputFile="$(OUTDIR)/Equivalent_Plate_DLL.exe" LinkIncremental="linkIncrementalNo" SubSystem="subSystemConsole" HeapReserveSize="100000000" HeapCommitSize="100000000" StackReserveSize="100000000" StackCommitSize="100000000" AdditionalDependencies="mkl_lapack95.lib mkl_scalapack_core.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" HeaderFileName="$(InputName).h" TypeLibraryName="$(IntDir)/$(InputName).tlb"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Debug|x64" DeleteExtensionsOnClean="*.obj;*.mod;*.pdb;*.asm;*.map;*.dyn;*.dpi;*.tmp;*.log;*.ilk;*.exe;$(TargetPath)">
+				<Tool Name="VFFortranCompilerTool" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" OpenMPConditionalCompilation="false" WarnDeclarations="true" WarnUnusedVariables="true" WarnUncalled="true" WarnInterfaces="true" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL" UseMkl="mklSequential"/>
+				<Tool Name="VFLinkerTool" OutputFile="$(OutDir)\Equivalent_Plate_DLL.exe" ShowProgress="linkProgressLibs" LinkIncremental="linkIncrementalNo" GenerateDebugInformation="true" SubSystem="subSystemConsole" HeapReserveSize="100000000" HeapCommitSize="100000000" StackReserveSize="100000000" StackCommitSize="100000000" AdditionalDependencies="mkl_lapack95_lp64.lib mkl_scalapack_lp64.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64" DeleteExtensionsOnClean="*.obj;*.mod;*.pdb;*.asm;*.map;*.dyn;*.dpi;*.tmp;*.log;*.ilk;*.exe;$(TargetPath)" WholeProgramOptimization="true">
+				<Tool Name="VFFortranCompilerTool" DebugInformationFormat="debugEnabled" Parallelization="true" PrefetchInsertionOpt="prefetchMinimum" BufferedIO="true" InterproceduralOptimizations="ipoSingleFile" MatrixLibrary="mlYes" EnableEnhancedInstructionSet="codeArchSSE3" OpenMP="OpenMPParallelCode" OpenMPDiagLevel="openMPDiagLevel2" ParallelizerDiagLevel="parallelizerDiagLevel0" VectorizerDiagLevel="vectorizerDiagLevel0" WarnDeclarations="true" WarnUnusedVariables="true" WarnUncalled="true" WarnInterfaces="true" ModulePath="$(INTDIR)/" ObjectFile="$(INTDIR)/" RuntimeLibrary="rtMultiThreadedDLL" UseMkl="mklParallel"/>
+				<Tool Name="VFLinkerTool" AdditionalOptions="/VERSION:5.2" OutputFile="$(OUTDIR)/Equivalent_Plate_DLL.exe" LinkIncremental="linkIncrementalNo" GenerateDebugInformation="true" ProgramDatabaseFile="$(OUTDIR)/DLL_Shared_Data.pdb" SubSystem="subSystemConsole" HeapReserveSize="100000000" HeapCommitSize="100000000" StackReserveSize="100000000" StackCommitSize="100000000" AdditionalDependencies="mkl_lapack95_lp64.lib mkl_scalapack_lp64.lib"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" TargetEnvironment="midlTargetAMD64" HeaderFileName="$(InputName).h" TypeLibraryName="$(IntDir)/$(InputName).tlb"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<File RelativePath=".\Analysis.f90"/>
+		<File RelativePath=".\export_subroutines.f90"/>
+		<File RelativePath=".\Inertia.f90"/>
+		<File RelativePath=".\Info.f90"/>
+		<File RelativePath=".\Load.f90"/>
+		<File RelativePath="main.f90"/>
+		<File RelativePath=".\Mass.f90"/>
+		<File RelativePath=".\Maths.f90"/>
+		<File RelativePath=".\Module.f90"/>
+		<File RelativePath=".\ReadGeometry.f90"/>
+		<File RelativePath=".\Section.f90"/>
+		<File RelativePath=".\Spline_Maths.f90"/>
+		<File RelativePath=".\Stiffness.f90"/>
+		<File RelativePath=".\Stress.f90"/>
+		<File RelativePath=".\Write.f90"/></Filter></Files>
+	<Globals/></VisualStudioProject>

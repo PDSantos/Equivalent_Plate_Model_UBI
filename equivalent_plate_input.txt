@@ -1,0 +1,274 @@
+General Definition
+analysis type   (1-All 2-Mass 3-Section Centroid 4-Deformation 5-Stresses and Strains 6-Frequencies
+           6
+Type of Polynomial to use => .TRUE.=Legendre |.FALSE.=Ritz
+           T
+Number of Legendre/Ritz Polynomial Coefficients
+         8
+Number of gauss-legendre integration points
+         8
+-------
+Planform Geometry Definition
+No. of wing sections
+           2
+Type of boundary condition (T for built-in or F for simply supported)
+           T
+-
+Section no. 1
+Lateral position, m
+       0.000000
+Longitudinal position, m
+       0.000000
+Vertical position, m
+       0.000000
+Chord, m
+       1.830000
+Incidence, deg
+       0.000000
+-
+Section no. 2
+Lateral position, m
+       4.880000
+Longitudinal position, m
+       3.0455
+Vertical position, m
+       0.000000
+Chord, m
+       0.914000
+Incidence, deg
+       0.000000
+------- Planform 1 -------
+Skin(s) Geometry Definition
+              2                              | no. of skin panels
+              T                              | T to use transverse shear or F otherwise
+-
+Skin no. 1 - upper skin
+       0.000000       0.000000                              | root and tip chord fraction of skin front line
+       1.000000       1.000000                              | root and tip chord fraction of skin aft line
+              1                                             | no. of polynomial terms defining skin thickness
+       0.003000                                             | polynonial coefficients defining skin thickness
+              0                                             | polynomial powers defining skin thickness
+       1.000000                                             | ratio of tip thickness to root thickness
+    2700.000000                                             | material density
+  70700000000.0  70700000000.0  27190000000.0               | in-plane elastic moduli (Ex,Ey,Gxy)
+       0.300000       0.300000                              | poisson ratio (miuxy,miuyx)
+  27190000000.0  27190000000.0                              | normal elastic moduli (Gxz,Gyz)
+-
+Skin no. 2 - lower skin
+       0.000000       0.000000                              | root and tip chord fraction of skin front line
+       1.000000       1.000000                              | root and tip chord fraction of skin aft line
+              1                                             | no. of polynomial terms defining skin thickness
+       0.003000                                             | polynonial coefficients defining skin thickness
+              0                                             | polynomial powers defining skin thickness
+       1.000000                                             | ratio of tip thickness to root thickness
+    2700.000000                                             | material density
+  70700000000.0  70700000000.0  27190000000.0               | in-plane elastic moduli (Ex,Ey,Gxy)
+       0.300000       0.300000                              | poisson ratio (miuxy,miuyx)
+  27190000000.0  27190000000.0                              | normal elastic moduli (Gxz,Gyz)
+-------
+Spar(s) Geometry Definition
+              4                              | no. of spar(s)
+              T                              | T to use in-plane normal shear or F otherwise
+-
+Spar no.  1
+       0.200000       0.200000                              | chord fraction of spar position at root and tip
+       0.001470       0.001470                              | spar web thickness at root and tip
+       0.005000       0.005000                              | spar cap height at root and tip
+       0.009470       0.009470                              | spar cap width at root and tip
+    2700.000000                                             | material density of spar web
+    2700.000000                                             | material density of spar cap
+  27190000000.0  70700000000.0                              | transversal and longitudinal elastic moduli of spar web
+       0.300000       0.300000                              | poisson ratio of spar web (miuez,miuze) - e is direction along web
+  70700000000.0                                             | longitudinal elastic modulus of spar cap
+       0.300000       0.300000                              | poisson ratio of spar cap (miuez,miuze) - e is direction along cap
+-
+Spar no.  2
+       0.400000       0.400000                              | chord fraction of spar position at root and tip
+       0.001470       0.001470                              | spar web thickness at root and tip
+       0.005000       0.005000                              | spar cap height at root and tip
+       0.009470       0.009470                              | spar cap width at root and tip
+    2700.000000                                             | material density of spar web
+    2700.000000                                             | material density of spar cap
+  27190000000.0  70700000000.0                              | transversal and longitudinal elastic moduli of spar web
+       0.300000       0.300000                              | poisson ratio of spar web (miuez,miuze) - e is direction along web
+  70700000000.0                                             | longitudinal elastic modulus of spar cap
+       0.300000       0.300000                              | poisson ratio of spar cap (miuez,miuze) - e is direction along cap
+-
+Spar no.  3
+       0.600000       0.600000                              | chord fraction of spar position at root and tip
+       0.001470       0.001470                              | spar web thickness at root and tip
+       0.005000       0.005000                              | spar cap height at root and tip
+       0.009470       0.009470                              | spar cap width at root and tip
+    2700.000000                                             | material density of spar web
+    2700.000000                                             | material density of spar cap
+  27190000000.0  70700000000.0                              | transversal and longitudinal elastic moduli of spar web
+       0.300000       0.300000                              | poisson ratio of spar web (miuez,miuze) - e is direction along web
+  70700000000.0                                             | longitudinal elastic modulus of spar cap
+       0.300000       0.300000                              | poisson ratio of spar cap (miuez,miuze) - e is direction along cap
+-
+Spar no.  4
+       0.800000       0.800000                              | chord fraction of spar position at root and tip
+       0.001470       0.001470                              | spar web thickness at root and tip
+       0.005000       0.005000                              | spar cap height at root and tip
+       0.009470       0.009470                              | spar cap width at root and tip
+    2700.000000                                             | material density of spar web
+    2700.000000                                             | material density of spar cap
+  27190000000.0  70700000000.0                              | transversal and longitudinal elastic moduli of spar web
+       0.300000       0.300000                              | poisson ratio of spar web (miuez,miuze) - e is direction along web
+  70700000000.0                                             | longitudinal elastic modulus of spar cap
+       0.300000       0.300000                              | poisson ratio of spar cap (miuez,miuze) - e is direction along cap
+-------
+Rib(s) Geometry Definition
+             11                              | no. of rib(s)
+              T                              | T to use in-plane normal shear or F otherwise
+-
+Rib no.  1
+       0.090900       0.090900                              | semi-span fraction of rib position at leading and trailing edges
+       0.001470       0.001470                              | rib web thickness at leading and trailing edges
+       0.005000       0.005000                              | rib cap height at leading and trailing edges
+       0.009470       0.009470                              | rib cap width at leading and trailing edges
+    2700.000000                                             | material density of rib web
+    2700.000000                                             | material density of rib cap
+  27190000000.0  70700000000.0                              | transversal and longitudinal elastic moduli of rib web
+       0.300000       0.300000                              | poisson ratio of rib web (miuez,miuze) - e is direction along rib
+  70700000000.0                                             | longitudinal elastic modulus of rib cap
+       0.300000       0.300000                              | poisson ratio of rib cap (miuez,miuze) - e is direction along rib
+-
+Rib no.  2
+       0.181800       0.181800                              | semi-span fraction of rib position at leading and trailing edges
+       0.001470       0.001470                              | rib web thickness at leading and trailing edges
+       0.005000       0.005000                              | rib cap height at leading and trailing edges
+       0.009470       0.009470                              | rib cap width at leading and trailing edges
+    2700.000000                                             | material density of rib web
+    2700.000000                                             | material density of rib cap
+  27190000000.0  70700000000.0                              | transversal and longitudinal elastic moduli of rib web
+       0.300000       0.300000                              | poisson ratio of rib web (miuez,miuze) - e is direction along rib
+  70700000000.0                                             | longitudinal elastic modulus of rib cap
+       0.300000       0.300000                              | poisson ratio of rib cap (miuez,miuze) - e is direction along rib
+-
+Rib no.  3
+       0.272700       0.272700                              | semi-span fraction of rib position at leading and trailing edges
+       0.001470       0.001470                              | rib web thickness at leading and trailing edges
+       0.005000       0.005000                              | rib cap height at leading and trailing edges
+       0.009470       0.009470                              | rib cap width at leading and trailing edges
+    2700.000000                                             | material density of rib web
+    2700.000000                                             | material density of rib cap
+  27190000000.0  70700000000.0                              | transversal and longitudinal elastic moduli of rib web
+       0.300000       0.300000                              | poisson ratio of rib web (miuez,miuze) - e is direction along rib
+  70700000000.0                                             | longitudinal elastic modulus of rib cap
+       0.300000       0.300000                              | poisson ratio of rib cap (miuez,miuze) - e is direction along rib
+-
+Rib no.  4
+       0.363600       0.363600                              | semi-span fraction of rib position at leading and trailing edges
+       0.001470       0.001470                              | rib web thickness at leading and trailing edges
+       0.005000       0.005000                              | rib cap height at leading and trailing edges
+       0.009470       0.009470                              | rib cap width at leading and trailing edges
+    2700.000000                                             | material density of rib web
+    2700.000000                                             | material density of rib cap
+  27190000000.0  70700000000.0                              | transversal and longitudinal elastic moduli of rib web
+       0.300000       0.300000                              | poisson ratio of rib web (miuez,miuze) - e is direction along rib
+  70700000000.0                                             | longitudinal elastic modulus of rib cap
+       0.300000       0.300000                              | poisson ratio of rib cap (miuez,miuze) - e is direction along rib
+-
+Rib no.  5
+       0.454500       0.454500                              | semi-span fraction of rib position at leading and trailing edges
+       0.001470       0.001470                              | rib web thickness at leading and trailing edges
+       0.005000       0.005000                              | rib cap height at leading and trailing edges
+       0.009470       0.009470                              | rib cap width at leading and trailing edges
+    2700.000000                                             | material density of rib web
+    2700.000000                                             | material density of rib cap
+  27190000000.0  70700000000.0                              | transversal and longitudinal elastic moduli of rib web
+       0.300000       0.300000                              | poisson ratio of rib web (miuez,miuze) - e is direction along rib
+  70700000000.0                                             | longitudinal elastic modulus of rib cap
+       0.300000       0.300000                              | poisson ratio of rib cap (miuez,miuze) - e is direction along rib
+-
+Rib no.  6
+       0.545400       0.545400                              | semi-span fraction of rib position at leading and trailing edges
+       0.001470       0.001470                              | rib web thickness at leading and trailing edges
+       0.005000       0.005000                              | rib cap height at leading and trailing edges
+       0.009470       0.009470                              | rib cap width at leading and trailing edges
+    2700.000000                                             | material density of rib web
+    2700.000000                                             | material density of rib cap
+  27190000000.0  70700000000.0                              | transversal and longitudinal elastic moduli of rib web
+       0.300000       0.300000                              | poisson ratio of rib web (miuez,miuze) - e is direction along rib
+  70700000000.0                                             | longitudinal elastic modulus of rib cap
+       0.300000       0.300000                              | poisson ratio of rib cap (miuez,miuze) - e is direction along rib
+-
+Rib no.  7
+       0.636300       0.636300                              | semi-span fraction of rib position at leading and trailing edges
+       0.001470       0.001470                              | rib web thickness at leading and trailing edges
+       0.005000       0.005000                              | rib cap height at leading and trailing edges
+       0.009470       0.009470                              | rib cap width at leading and trailing edges
+    2700.000000                                             | material density of rib web
+    2700.000000                                             | material density of rib cap
+  27190000000.0  70700000000.0                              | transversal and longitudinal elastic moduli of rib web
+       0.300000       0.300000                              | poisson ratio of rib web (miuez,miuze) - e is direction along rib
+  70700000000.0                                             | longitudinal elastic modulus of rib cap
+       0.300000       0.300000                              | poisson ratio of rib cap (miuez,miuze) - e is direction along rib
+-
+Rib no.  8
+       0.727200       0.727200                              | semi-span fraction of rib position at leading and trailing edges
+       0.001470       0.001470                              | rib web thickness at leading and trailing edges
+       0.005000       0.005000                              | rib cap height at leading and trailing edges
+       0.009470       0.009470                              | rib cap width at leading and trailing edges
+    2700.000000                                             | material density of rib web
+    2700.000000                                             | material density of rib cap
+  27190000000.0  70700000000.0                              | transversal and longitudinal elastic moduli of rib web
+       0.300000       0.300000                              | poisson ratio of rib web (miuez,miuze) - e is direction along rib
+  70700000000.0                                             | longitudinal elastic modulus of rib cap
+       0.300000       0.300000                              | poisson ratio of rib cap (miuez,miuze) - e is direction along rib
+-
+Rib no.  9
+       0.818100       0.818100                              | semi-span fraction of rib position at leading and trailing edges
+       0.001470       0.001470                              | rib web thickness at leading and trailing edges
+       0.005000       0.005000                              | rib cap height at leading and trailing edges
+       0.009470       0.009470                              | rib cap width at leading and trailing edges
+    2700.000000                                             | material density of rib web
+    2700.000000                                             | material density of rib cap
+  27190000000.0  70700000000.0                              | transversal and longitudinal elastic moduli of rib web
+       0.300000       0.300000                              | poisson ratio of rib web (miuez,miuze) - e is direction along rib
+  70700000000.0                                             | longitudinal elastic modulus of rib cap
+       0.300000       0.300000                              | poisson ratio of rib cap (miuez,miuze) - e is direction along rib
+-
+Rib no. 10
+       0.909000       0.909000                              | semi-span fraction of rib position at leading and trailing edges
+       0.001470       0.001470                              | rib web thickness at leading and trailing edges
+       0.005000       0.005000                              | rib cap height at leading and trailing edges
+       0.009470       0.009470                              | rib cap width at leading and trailing edges
+    2700.000000                                             | material density of rib web
+    2700.000000                                             | material density of rib cap
+  27190000000.0  70700000000.0                              | transversal and longitudinal elastic moduli of rib web
+       0.300000       0.300000                              | poisson ratio of rib web (miuez,miuze) - e is direction along rib
+  70700000000.0                                             | longitudinal elastic modulus of rib cap
+       0.300000       0.300000                              | poisson ratio of rib cap (miuez,miuze) - e is direction along rib
+-
+Rib no. 11
+       1.000000       1.000000                              | semi-span fraction of rib position at leading and trailing edges
+       0.001470       0.001470                              | rib web thickness at leading and trailing edges
+       0.005000       0.005000                              | rib cap height at leading and trailing edges
+       0.009470       0.009470                              | rib cap width at leading and trailing edges
+    2700.000000                                             | material density of rib web
+    2700.000000                                             | material density of rib cap
+  27190000000.0  70700000000.0                              | transversal and longitudinal elastic moduli of rib web
+       0.300000       0.300000                              | poisson ratio of rib web (miuez,miuze) - e is direction along rib
+  70700000000.0                                             | longitudinal elastic modulus of rib cap
+       0.300000       0.300000                              | poisson ratio of rib cap (miuez,miuze) - e is direction along rib
+-------
+Stringer(s) Geometry Definition
+              0                              | no. of stringer(s)
+-------
+Spring(s) Geometry Definition
+              0                              | no. of spring(s)
+-------
+Concentrated Load(s)
+              2                              | no. of concentrated load(s)
+-
+Coordinates format option (T = absolute coordinates (x,y,z), F = relative coordinates [(x-xLE)/c,(y-yROOT)/b/2,z/c])
+              F
+-
+Load application point coordinates (x,y,z) and load value in x, y, z directions
+         0.2000000         1.0000000         0.0000000         0.0000000         0.0000000      4448.0000000
+         0.8000000         1.0000000         0.0000000         0.0000000         0.0000000     -4448.0000000
+-------
+Actuator(s) Load(s)
+              0                              | no. of actuator(s)
